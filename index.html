@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title> Calculadora</title>
+    <link rel="stylesheet" href="estilo.css"/>
+
+
+</head>
+
+<body> 
+    <input type="number" id="inputDisplay" value="0" disable="0" class="inputDisplay" /> 
+    <table>
+        <tr>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('7')">7</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('8')">8</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('9')">9</button> 
+            </td>
+            <td>
+                <button class="btn" onClick="limpar()">C</button><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('4')">4</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('5')">5</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('6')">6</button> 
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaOperacao('+')">+</button><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('1')">1</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('2')">2</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('3')">3</button> 
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaOperacao('-')">-</button><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn" onClick="resolver()">=</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaDisplay('0')">0</button>
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaOperacao('*')">X</button> 
+            </td>
+            <td>
+                <button class="btn" onClick="atualizaOperacao('/')">/</button><br>
+            </td>
+        </tr>
+
+
+    </table>
+    <script src="funcoes.js"> </script>
+
+
+
+</body>
+
+</html>
